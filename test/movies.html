@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Phim - MindX Cinema</title>
+    <link rel="stylesheet" href="assets/css/movies.css">
+</head>
+<body>
+     Header Navigation - Thanh điều hướng chính 
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>MindX Cinema</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                <li><a href="movies.html" class="nav-link active">Phim</a></li>
+                <li><a href="booking.html" class="nav-link">Đặt Vé</a></li>
+                <li><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     Page Header - Tiêu đề trang 
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Danh Sách Phim</h1>
+            <p class="page-subtitle">Khám phá những bộ phim hay nhất đang chiếu tại rạp</p>
+        </div>
+    </section>
+
+     Filter Section - Phần lọc phim 
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="genre-filter">Thể Loại:</label>
+                    <select id="genre-filter" class="filter-select">
+                        <option value="all">Tất Cả</option>
+                        <option value="action">Hành Động</option>
+                        <option value="romance">Tình Cảm</option>
+                        <option value="horror">Kinh Dị</option>
+                        <option value="comedy">Hài Kịch</option>
+                        <option value="drama">Chính Kịch</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating-filter">Đánh Giá:</label>
+                    <select id="rating-filter" class="filter-select">
+                        <option value="all">Tất Cả</option>
+                        <option value="5">5 Sao</option>
+                        <option value="4">4 Sao Trở Lên</option>
+                        <option value="3">3 Sao Trở Lên</option>
+                    </select>
+                </div>
+                <div class="search-group">
+                    <input type="text" id="search-input" placeholder="Tìm kiếm phim..." class="search-input">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Movies Grid - Lưới hiển thị phim 
+    <section class="movies-section">
+        <div class="container">
+            <div class="movies-grid">
+                 Movie Card 1 
+                <div class="movie-card" data-genre="action" data-rating="5">
+                    <div class="movie-poster-container">
+                        <img src="/placeholder.svg?height=400&width=280" alt="Siêu Anh Hùng" class="movie-poster">
+                        <div class="movie-overlay">
+                            <a href="movie-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
+                            <a href="booking.html" class="btn btn-secondary">Đặt Vé</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Siêu Anh Hùng</h3>
+                        <p class="movie-genre">Hành Động, Phiêu Lưu</p>
+                        <div class="movie-rating">★★★★★</div>
+                        <p class="movie-duration">120 phút</p>
+                        <p class="movie-release">2024</p>
+                    </div>
+                </div>
+
+                 Movie Card 2 
+                <div class="movie-card" data-genre="romance" data-rating="5">
+                    <div class="movie-poster-container">
+                        <img src="/placeholder.svg?height=400&width=280" alt="Tình Yêu Mùa Thu" class="movie-poster">
+                        <div class="movie-overlay">
+                            <a href="movie-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
+                            <a href="booking.html" class="btn btn-secondary">Đặt Vé</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Tình Yêu Mùa Thu</h3>
+                        <p class="movie-genre">Tình Cảm, Lãng Mạn</p>
+                        <div class="movie-rating">★★★★★</div>
+                        <p class="movie-duration">105 phút</p>
+                        <p class="movie-release">2024</p>
+                    </div>
+                </div>
+
+                 Movie Card 3 
+                <div class="movie-card" data-genre="horror" data-rating="3">
+                    <div class="movie-poster-container">
+                        <img src="/placeholder.svg?height=400&width=280" alt="Bóng Đêm" class="movie-poster">
+                        <div class="movie-overlay">
+                            <a href="movie-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
+                            <a href="booking.html" class="btn btn-secondary">Đặt Vé</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Bóng Đêm</h3>
+                        <p class="movie-genre">Kinh Dị, Bí Ẩn</p>
+                        <div class="movie-rating">★★★☆☆</div>
+                        <p class="movie-duration">95 phút</p>
+                        <p class="movie-release">2024</p>
+                    </div>
+                </div>
+
+                 Movie Card 4 
+                <div class="movie-card" data-genre="comedy" data-rating="4">
+                    <div class="movie-poster-container">
+                        <img src="/placeholder.svg?height=400&width=280" alt="Cười Vỡ Bụng" class="movie-poster">
+                        <div class="movie-overlay">
+                            <a href="movie-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
+                            <a href="booking.html" class="btn btn-secondary">Đặt Vé</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Cười Vỡ Bụng</h3>
+                        <p class="movie-genre">Hài Kịch, Gia Đình</p>
+                        <div class="movie-rating">★★★★☆</div>
+                        <p class="movie-duration">110 phút</p>
+                        <p class="movie-release">2024</p>
+                    </div>
+                </div>
+
+                 Movie Card 5 
+                <div class="movie-card" data-genre="drama" data-rating="4">
+                    <div class="movie-poster-container">
+                        <img src="/placeholder.svg?height=400&width=280" alt="Cuộc Đời" class="movie-poster">
+                        <div class="movie-overlay">
+                            <a href="movie-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
+                            <a href="booking.html" class="btn btn-secondary">Đặt Vé</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Cuộc Đời</h3>
+                        <p class="movie-genre">Chính Kịch, Tâm Lý</p>
+                        <div class="movie-rating">★★★★☆</div>
+                        <p class="movie-duration">135 phút</p>
+                        <p class="movie-release">2024</p>
+                    </div>
+                </div>
+
+                 Movie Card 6 
+                <div class="movie-card" data-genre="action" data-rating="4">
+                    <div class="movie-poster-container">
+                        <img src="/placeholder.svg?height=400&width=280" alt="Tương Lai" class="movie-poster">
+                        <div class="movie-overlay">
+                            <a href="movie-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
+                            <a href="booking.html" class="btn btn-secondary">Đặt Vé</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Tương Lai</h3>
+                        <p class="movie-genre">Khoa Học Viễn Tưởng</p>
+                        <div class="movie-rating">★★★★☆</div>
+                        <p class="movie-duration">140 phút</p>
+                        <p class="movie-release">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer - Chân trang 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindX Cinema</h3>
+                    <p>Rạp chiếu phim hiện đại với trải nghiệm điện ảnh tuyệt vời</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="movies.html">Phim</a></li>
+                        <li><a href="booking.html">Đặt Vé</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📧 info@mindxcinema.com</p>
+                    <p>📞 0123 456 789</p>
+                    <p>📍 123 Đường ABC, Hà Nội</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © MindX School</p>
+                <div class="social-links">
+                    <span>Contact: </span>
+                    <a href="#" aria-label="GitHub">🐙</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Vé - MindX Cinema</title>
+    <link rel="stylesheet" href="assets/css/booking.css">
+</head>
+<body>
+     Header Navigation - Thanh điều hướng chính 
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>MindX Cinema</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                <li><a href="movies.html" class="nav-link">Phim</a></li>
+                <li><a href="booking.html" class="nav-link active">Đặt Vé</a></li>
+                <li><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     Page Header - Tiêu đề trang 
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Đặt Vé Online</h1>
+            <p class="page-subtitle">Chọn phim, suất chiếu và ghế ngồi yêu thích của bạn</p>
+        </div>
+    </section>
+
+     Booking Steps - Các bước đặt vé 
+    <section class="booking-steps">
+        <div class="container">
+            <div class="steps-indicator">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <span class="step-label">Chọn Phim</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <span class="step-label">Chọn Suất</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <span class="step-label">Chọn Ghế</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <span class="step-label">Thanh Toán</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Movie Selection - Chọn phim 
+    <section class="movie-selection">
+        <div class="container">
+            <h2 class="section-title">Chọn Phim</h2>
+            <div class="movies-list">
+                <div class="movie-option selected">
+                    <img src="/placeholder.svg?height=120&width=80" alt="Siêu Anh Hùng" class="movie-thumb">
+                    <div class="movie-info">
+                        <h3 class="movie-name">Siêu Anh Hùng</h3>
+                        <p class="movie-details">120 phút • Hành Động</p>
+                        <div class="movie-rating">★★★★★</div>
+                    </div>
+                </div>
+                <div class="movie-option">
+                    <img src="/placeholder.svg?height=120&width=80" alt="Tình Yêu Mùa Thu" class="movie-thumb">
+                    <div class="movie-info">
+                        <h3 class="movie-name">Tình Yêu Mùa Thu</h3>
+                        <p class="movie-details">105 phút • Tình Cảm</p>
+                        <div class="movie-rating">★★★★★</div>
+                    </div>
+                </div>
+                <div class="movie-option">
+                    <img src="/placeholder.svg?height=120&width=80" alt="Bóng Đêm" class="movie-thumb">
+                    <div class="movie-info">
+                        <h3 class="movie-name">Bóng Đêm</h3>
+                        <p class="movie-details">95 phút • Kinh Dị</p>
+                        <div class="movie-rating">★★★☆☆</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Showtime Selection - Chọn suất chiếu 
+    <section class="showtime-selection">
+        <div class="container">
+            <h2 class="section-title">Chọn Suất Chiếu</h2>
+            <div class="date-tabs">
+                <button class="date-tab active">Hôm nay - 15/03</button>
+                <button class="date-tab">Ngày mai - 16/03</button>
+                <button class="date-tab">Thứ 7 - 17/03</button>
+                <button class="date-tab">Chủ nhật - 18/03</button>
+            </div>
+            <div class="cinema-showtimes">
+                <div class="cinema-section">
+                    <h3 class="cinema-name">MindX Cinema - Hà Nội</h3>
+                    <div class="showtimes">
+                        <button class="showtime-btn">09:00</button>
+                        <button class="showtime-btn selected">12:30</button>
+                        <button class="showtime-btn">15:45</button>
+                        <button class="showtime-btn">18:20</button>
+                        <button class="showtime-btn">21:00</button>
+                    </div>
+                </div>
+                <div class="cinema-section">
+                    <h3 class="cinema-name">MindX Cinema - TP.HCM</h3>
+                    <div class="showtimes">
+                        <button class="showtime-btn">10:15</button>
+                        <button class="showtime-btn">13:00</button>
+                        <button class="showtime-btn">16:30</button>
+                        <button class="showtime-btn">19:45</button>
+                        <button class="showtime-btn">22:15</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Seat Selection - Chọn ghế ngồi 
+    <section class="seat-selection">
+        <div class="container">
+            <h2 class="section-title">Chọn Ghế Ngồi</h2>
+            <div class="cinema-layout">
+                <div class="screen">
+                    <div class="screen-label">Màn Hình</div>
+                </div>
+                <div class="seating-chart">
+                     Row A 
+                    <div class="seat-row">
+                        <span class="row-label">A</span>
+                        <div class="seats">
+                            <button class="seat available">1</button>
+                            <button class="seat available">2</button>
+                            <button class="seat occupied">3</button>
+                            <button class="seat occupied">4</button>
+                            <button class="seat available">5</button>
+                            <button class="seat available">6</button>
+                            <button class="seat available">7</button>
+                            <button class="seat available">8</button>
+                        </div>
+                    </div>
+                     Row B 
+                    <div class="seat-row">
+                        <span class="row-label">B</span>
+                        <div class="seats">
+                            <button class="seat available">1</button>
+                            <button class="seat available">2</button>
+                            <button class="seat available">3</button>
+                            <button class="seat selected">4</button>
+                            <button class="seat selected">5</button>
+                            <button class="seat available">6</button>
+                            <button class="seat available">7</button>
+                            <button class="seat occupied">8</button>
+                        </div>
+                    </div>
+                     Row C 
+                    <div class="seat-row">
+                        <span class="row-label">C</span>
+                        <div class="seats">
+                            <button class="seat available">1</button>
+                            <button class="seat available">2</button>
+                            <button class="seat available">3</button>
+                            <button class="seat available">4</button>
+                            <button class="seat available">5</button>
+                            <button class="seat available">6</button>
+                            <button class="seat occupied">7</button>
+                            <button class="seat occupied">8</button>
+                        </div>
+                    </div>
+                     Row D 
+                    <div class="seat-row">
+                        <span class="row-label">D</span>
+                        <div class="seats">
+                            <button class="seat available">1</button>
+                            <button class="seat available">2</button>
+                            <button class="seat available">3</button>
+                            <button class="seat available">4</button>
+                            <button class="seat available">5</button>
+                            <button class="seat available">6</button>
+                            <button class="seat available">7</button>
+                            <button class="seat available">8</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="seat-legend">
+                    <div class="legend-item">
+                        <div class="seat available small"></div>
+                        <span>Còn trống</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="seat selected small"></div>
+                        <span>Đã chọn</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="seat occupied small"></div>
+                        <span>Đã bán</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Booking Summary - Tóm tắt đặt vé 
+    <section class="booking-summary">
+        <div class="container">
+            <div class="summary-container">
+                <div class="booking-form">
+                    <h2 class="section-title">Thông Tin Khách Hàng</h2>
+                    <form class="customer-form">
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên *</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Ghi chú</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Yêu cầu đặc biệt (nếu có)"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-summary">
+                    <h3 class="summary-title">Tóm Tắt Đơn Hàng</h3>
+                    <div class="summary-details">
+                        <div class="summary-item">
+                            <span class="item-label">Phim:</span>
+                            <span class="item-value">Siêu Anh Hùng</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="item-label">Rạp:</span>
+                            <span class="item-value">MindX Cinema - Hà Nội</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="item-label">Suất chiếu:</span>
+                            <span class="item-value">12:30 - 15/03/2024</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="item-label">Ghế:</span>
+                            <span class="item-value">B4, B5</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="item-label">Số lượng:</span>
+                            <span class="item-value">2 vé</span>
+                        </div>
+                        <div class="summary-item price-item">
+                            <span class="item-label">Tổng tiền:</span>
+                            <span class="item-value total-price">200,000 VNĐ</span>
+                        </div>
+                    </div>
+                    <div class="payment-methods">
+                        <h4>Phương thức thanh toán</h4>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="momo" checked>
+                                <span class="payment-label">Ví MoMo</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="banking">
+                                <span class="payment-label">Chuyển khoản</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cash">
+                                <span class="payment-label">Tiền mặt tại quầy</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large btn-full">Xác Nhận Đặt Vé</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer - Chân trang 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindX Cinema</h3>
+                    <p>Rạp chiếu phim hiện đại với trải nghiệm điện ảnh tuyệt vời</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="movies.html">Phim</a></li>
+                        <li><a href="booking.html">Đặt Vé</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📧 info@mindxcinema.com</p>
+                    <p>📞 0123 456 789</p>
+                    <p>📍 123 Đường ABC, Hà Nội</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © MindX School</p>
+                <div class="social-links">
+                    <span>Contact: </span>
+                    <a href="#" aria-label="GitHub">🐙</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

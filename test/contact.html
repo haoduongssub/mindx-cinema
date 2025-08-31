@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - MindX Cinema</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+     Header Navigation - Thanh điều hướng chính 
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>MindX Cinema</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                <li><a href="movies.html" class="nav-link">Phim</a></li>
+                <li><a href="booking.html" class="nav-link">Đặt Vé</a></li>
+                <li><a href="contact.html" class="nav-link active">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     Page Header - Tiêu đề trang 
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Liên Hệ Với Chúng Tôi</h1>
+            <p class="page-subtitle">Chúng tôi luôn sẵn sàng hỗ trợ và lắng nghe ý kiến của bạn</p>
+        </div>
+    </section>
+
+     Contact Info - Thông tin liên hệ 
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Địa Chỉ</h3>
+                    <p>123 Đường ABC, Quận 1<br>TP. Hồ Chí Minh, Việt Nam</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <h3>Điện Thoại</h3>
+                    <p>Hotline: 0123 456 789<br>Hỗ trợ: 0987 654 321</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>info@mindxcinema.com<br>support@mindxcinema.com</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🕒</div>
+                    <h3>Giờ Làm Việc</h3>
+                    <p>Thứ 2 - Chủ nhật<br>8:00 - 23:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Contact Form - Form liên hệ 
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="form-section">
+                    <h2 class="section-title">Gửi Tin Nhắn</h2>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Họ *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Tên *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Chủ đề *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Chọn chủ đề</option>
+                                <option value="booking">Hỗ trợ đặt vé</option>
+                                <option value="technical">Vấn đề kỹ thuật</option>
+                                <option value="feedback">Góp ý</option>
+                                <option value="complaint">Khiếu nại</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tin nhắn *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Nhập tin nhắn của bạn..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+                <div class="map-section">
+                    <h2 class="section-title">Vị Trí Rạp Chiếu</h2>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <img src="/placeholder.svg?height=400&width=500" alt="Bản đồ vị trí rạp chiếu phim" class="map-image">
+                            <div class="map-overlay">
+                                <p>📍 MindX Cinema</p>
+                                <p>123 Đường ABC, Quận 1, TP.HCM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <h4>Cách Di Chuyển</h4>
+                        <ul class="transport-list">
+                            <li>🚌 Xe buýt: Tuyến 01, 05, 19 - Dừng tại bến ABC</li>
+                            <li>🚇 Metro: Ga Bến Thành (200m)</li>
+                            <li>🚗 Ô tô: Bãi đỗ xe miễn phí tại tầng B1</li>
+                            <li>🏍️ Xe máy: Bãi gửi xe an toàn 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     FAQ Section - Câu hỏi thường gặp 
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Làm thế nào để đặt vé online?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bạn có thể đặt vé dễ dàng thông qua trang web của chúng tôi. Chỉ cần chọn phim, suất chiếu, ghế ngồi và thanh toán online. Vé sẽ được gửi qua email hoặc SMS.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Có thể hủy vé đã đặt không?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bạn có thể hủy vé trước 2 giờ so với giờ chiếu. Phí hủy vé là 10% giá trị vé. Vui lòng liên hệ hotline để được hỗ trợ.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Rạp có bán đồ ăn và thức uống không?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có, chúng tôi có quầy bán đồ ăn nhẹ, bắp rang, nước ngọt và nhiều món ăn vặt khác. Bạn có thể mua trước khi vào phòng chiếu.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Có chỗ đỗ xe không?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có, chúng tôi có bãi đỗ xe miễn phí tại tầng B1 cho ô tô và khu vực gửi xe máy an toàn 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer - Chân trang 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindX Cinema</h3>
+                    <p>Rạp chiếu phim hiện đại với trải nghiệm điện ảnh tuyệt vời</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="movies.html">Phim</a></li>
+                        <li><a href="booking.html">Đặt Vé</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📧 info@mindxcinema.com</p>
+                    <p>📞 0123 456 789</p>
+                    <p>📍 123 Đường ABC, Hà Nội</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © MindX School</p>
+                <div class="social-links">
+                    <span>Contact: </span>
+                    <a href="#" aria-label="GitHub">🐙</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

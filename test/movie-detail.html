@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Phim - MindX Cinema</title>
+    <link rel="stylesheet" href="assets/css/movie-detail.css">
+</head>
+<body>
+     Header Navigation - Thanh điều hướng chính 
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>MindX Cinema</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                <li><a href="movies.html" class="nav-link">Phim</a></li>
+                <li><a href="booking.html" class="nav-link">Đặt Vé</a></li>
+                <li><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     Movie Hero Section - Phần banner phim 
+    <section class="movie-hero">
+        <div class="hero-background">
+            <img src="/placeholder.svg?height=600&width=1200" alt="Movie Background" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="movie-hero-content">
+                <div class="movie-poster-large">
+                    <img src="/placeholder.svg?height=500&width=350" alt="Siêu Anh Hùng" class="poster-image">
+                </div>
+                <div class="movie-details">
+                    <h1 class="movie-title">Siêu Anh Hùng</h1>
+                    <div class="movie-meta">
+                        <span class="movie-year">2024</span>
+                        <span class="movie-duration">120 phút</span>
+                        <span class="movie-rating-badge">PG-13</span>
+                    </div>
+                    <div class="movie-genres">
+                        <span class="genre-tag">Hành Động</span>
+                        <span class="genre-tag">Phiêu Lưu</span>
+                        <span class="genre-tag">Khoa Học Viễn Tưởng</span>
+                    </div>
+                    <div class="movie-rating-section">
+                        <div class="rating-stars">★★★★★</div>
+                        <span class="rating-text">9.2/10 (1,234 đánh giá)</span>
+                    </div>
+                    <p class="movie-synopsis">
+                        Một câu chuyện hấp dẫn về một siêu anh hùng phải đối mặt với thử thách lớn nhất trong cuộc đời. 
+                        Với những pha hành động mãn nhãn và hiệu ứng đặc biệt đỉnh cao, bộ phim hứa hẹn mang đến 
+                        trải nghiệm điện ảnh không thể quên.
+                    </p>
+                    <div class="action-buttons">
+                        <a href="booking.html" class="btn btn-primary btn-large">Đặt Vé Ngay</a>
+                        <button class="btn btn-secondary btn-large">Xem Trailer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Movie Info Section - Thông tin chi tiết phim 
+    <section class="movie-info-section">
+        <div class="container">
+            <div class="info-grid">
+                 Cast & Crew - Diễn viên và đoàn làm phim 
+                <div class="info-card">
+                    <h3 class="info-title">Diễn Viên</h3>
+                    <div class="cast-list">
+                        <div class="cast-member">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Diễn viên 1" class="cast-photo">
+                            <div class="cast-info">
+                                <h4>Nguyễn Văn A</h4>
+                                <p>Vai chính</p>
+                            </div>
+                        </div>
+                        <div class="cast-member">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Diễn viên 2" class="cast-photo">
+                            <div class="cast-info">
+                                <h4>Trần Thị B</h4>
+                                <p>Vai phụ</p>
+                            </div>
+                        </div>
+                        <div class="cast-member">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Diễn viên 3" class="cast-photo">
+                            <div class="cast-info">
+                                <h4>Lê Văn C</h4>
+                                <p>Vai phản diện</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 Technical Info - Thông tin kỹ thuật 
+                <div class="info-card">
+                    <h3 class="info-title">Thông Tin Kỹ Thuật</h3>
+                    <div class="tech-info">
+                        <div class="tech-item">
+                            <span class="tech-label">Đạo diễn:</span>
+                            <span class="tech-value">Phạm Văn D</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Nhà sản xuất:</span>
+                            <span class="tech-value">Studio ABC</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Quốc gia:</span>
+                            <span class="tech-value">Việt Nam</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Ngôn ngữ:</span>
+                            <span class="tech-value">Tiếng Việt</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Ngày khởi chiếu:</span>
+                            <span class="tech-value">15/03/2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Showtimes Section - Lịch chiếu 
+    <section class="showtimes-section">
+        <div class="container">
+            <h2 class="section-title">Lịch Chiếu</h2>
+            <div class="showtimes-container">
+                <div class="date-selector">
+                    <button class="date-btn active">Hôm nay<br><span>15/03</span></button>
+                    <button class="date-btn">Ngày mai<br><span>16/03</span></button>
+                    <button class="date-btn">Thứ 7<br><span>17/03</span></button>
+                    <button class="date-btn">Chủ nhật<br><span>18/03</span></button>
+                </div>
+                <div class="showtimes-grid">
+                    <div class="cinema-block">
+                        <h4 class="cinema-name">MindX Cinema - Hà Nội</h4>
+                        <div class="time-slots">
+                            <button class="time-slot">09:00</button>
+                            <button class="time-slot">12:30</button>
+                            <button class="time-slot">15:45</button>
+                            <button class="time-slot">18:20</button>
+                            <button class="time-slot">21:00</button>
+                        </div>
+                    </div>
+                    <div class="cinema-block">
+                        <h4 class="cinema-name">MindX Cinema - TP.HCM</h4>
+                        <div class="time-slots">
+                            <button class="time-slot">10:15</button>
+                            <button class="time-slot">13:00</button>
+                            <button class="time-slot">16:30</button>
+                            <button class="time-slot">19:45</button>
+                            <button class="time-slot">22:15</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Reviews Section - Phần đánh giá 
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Đánh Giá Khán Giả</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="/placeholder.svg?height=50&width=50" alt="Reviewer" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Nguyễn Minh</h4>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <span class="review-date">2 ngày trước</span>
+                    </div>
+                    <p class="review-text">
+                        Bộ phim tuyệt vời! Cốt truyện hấp dẫn, diễn xuất ấn tượng và hiệu ứng đặc biệt đỉnh cao. 
+                        Đáng để xem trên màn ảnh rộng.
+                    </p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="/placeholder.svg?height=50&width=50" alt="Reviewer" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Trần Lan</h4>
+                                <div class="review-rating">★★★★☆</div>
+                            </div>
+                        </div>
+                        <span class="review-date">1 tuần trước</span>
+                    </div>
+                    <p class="review-text">
+                        Phim hay, nhưng có một số phần hơi dài. Tổng thể vẫn rất đáng xem và giải trí tốt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer - Chân trang 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindX Cinema</h3>
+                    <p>Rạp chiếu phim hiện đại với trải nghiệm điện ảnh tuyệt vời</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="movies.html">Phim</a></li>
+                        <li><a href="booking.html">Đặt Vé</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📧 info@mindxcinema.com</p>
+                    <p>📞 0123 456 789</p>
+                    <p>📍 123 Đường ABC, Hà Nội</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © MindX School</p>
+                <div class="social-links">
+                    <span>Contact: </span>
+                    <a href="#" aria-label="GitHub">🐙</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

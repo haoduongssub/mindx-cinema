@@ -1,0 +1,690 @@
+/* Reset và Base Styles - Thiết lập cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles - Thiết kế header */
+.header {
+  background-color: #000000;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #e50914;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #e50914;
+}
+
+/* Page Header - Thiết kế tiêu đề trang */
+.page-header {
+  margin-top: 80px;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Booking Steps - Chỉ báo các bước đặt vé */
+.booking-steps {
+  padding: 2rem 0;
+  background-color: #2d2d2d;
+}
+
+.steps-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #555555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.step.active .step-number {
+  background-color: #e50914;
+}
+
+.step-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Movie Selection - Phần chọn phim */
+.movie-selection {
+  padding: 3rem 0;
+  background-color: #1a1a1a;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.movies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.movie-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.movie-option:hover {
+  background-color: #333333;
+}
+
+.movie-option.selected {
+  border-color: #e50914;
+  background-color: rgba(229, 9, 20, 0.1);
+}
+
+.movie-thumb {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.movie-details {
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.movie-rating {
+  color: #ffd700;
+  font-size: 1rem;
+}
+
+/* Showtime Selection - Phần chọn suất chiếu */
+.showtime-selection {
+  padding: 3rem 0;
+  background-color: #2d2d2d;
+}
+
+.date-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.date-tab {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.date-tab:hover,
+.date-tab.active {
+  background-color: #e50914;
+}
+
+.cinema-showtimes {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cinema-section {
+  margin-bottom: 2rem;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.cinema-name {
+  color: #e50914;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.showtimes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.showtime-btn {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border: 1px solid #555555;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.showtime-btn:hover {
+  background-color: #555555;
+}
+
+.showtime-btn.selected {
+  background-color: #e50914;
+  border-color: #e50914;
+}
+
+/* Seat Selection - Phần chọn ghế */
+.seat-selection {
+  padding: 3rem 0;
+  background-color: #1a1a1a;
+}
+
+.cinema-layout {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.screen {
+  margin-bottom: 2rem;
+}
+
+.screen-label {
+  background: linear-gradient(135deg, #e50914 0%, #b8070f 100%);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.seating-chart {
+  margin-bottom: 2rem;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.row-label {
+  width: 30px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.seats {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.seat {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.seat.available {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.seat.available:hover {
+  background-color: #555555;
+}
+
+.seat.selected {
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+.seat.occupied {
+  background-color: #666666;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.seat.small {
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+/* Booking Summary - Tóm tắt đặt vé */
+.booking-summary {
+  padding: 3rem 0;
+  background-color: #2d2d2d;
+}
+
+.summary-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.booking-form {
+  flex: 1;
+}
+
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.order-summary {
+  flex: 1;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  position: sticky;
+  top: 100px;
+}
+
+.summary-title {
+  color: #e50914;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 0.5rem;
+}
+
+.summary-details {
+  margin-bottom: 2rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #333333;
+}
+
+.item-label {
+  color: #cccccc;
+}
+
+.item-value {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.price-item {
+  border-bottom: 2px solid #e50914;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.total-price {
+  color: #e50914;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.payment-methods {
+  margin-bottom: 2rem;
+}
+
+.payment-methods h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+  accent-color: #e50914;
+}
+
+.payment-label {
+  color: #cccccc;
+}
+
+/* Button Styles - Thiết kế nút bấm */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-large {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #b8070f;
+  transform: translateY(-2px);
+}
+
+/* Footer Styles - Thiết kế chân trang */
+.footer {
+  background-color: #000000;
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section li {
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #e50914;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333333;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design - Thiết kế responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .steps-indicator {
+    gap: 1.5rem;
+  }
+
+  .summary-container {
+    flex-direction: column;
+  }
+
+  .order-summary {
+    position: static;
+  }
+
+  .date-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date-tab {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .seat-legend {
+    gap: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 2rem 0;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .booking-summary {
+    padding: 2rem 0;
+  }
+
+  .seats {
+    gap: 0.3rem;
+  }
+
+  .seat {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

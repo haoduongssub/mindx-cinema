@@ -1,0 +1,376 @@
+/* Reset và Base Styles - Thiết lập cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles - Thiết kế header */
+.header {
+  background-color: #000000;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #e50914;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #e50914;
+}
+
+/* Hero Section - Phần banner chính */
+.hero {
+  margin-top: 80px;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.hero {
+  display: flex;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  padding: 4rem 20px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styles - Thiết kế nút bấm */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #b8070f;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+/* Featured Movies Section - Phần phim nổi bật */
+.featured-movies {
+  padding: 4rem 0;
+  background-color: #1a1a1a;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.movies-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 1.5rem;
+}
+
+.movie-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.movie-genre {
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.movie-rating {
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Services Section - Phần dịch vụ */
+.services {
+  padding: 4rem 0;
+  background-color: #2d2d2d;
+}
+
+.services-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.service-card p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Footer Styles - Thiết kế chân trang */
+.footer {
+  background-color: #000000;
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section li {
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #e50914;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333333;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design - Thiết kế responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .movies-grid,
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
